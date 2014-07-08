@@ -63,6 +63,16 @@ a:focus {
     marging-top: 800px;
 }
 
+.thumbnailo {
+
+
+text-align: center;
+line-height: 1.428571429;
+background-color: black;
+border: 0px solid #ddd;
+border-radius: 4px;
+}
+
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);

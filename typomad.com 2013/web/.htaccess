@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+AddDefaultCharset utf-8
+
+Rewriterule ^(.*)/(.*)/$ /?a=$1&b=$2 [L]
+Rewriterule ^(.*)/$ /?a=$1 [L]
+
+RewriteCond %{HTTPS}s ^on(s)|off
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule [^/]$ http%1://%{HTTP_HOST}%{REQUEST_URI}/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^typomad.com$ [NC]
+RewriteRule ^(.*)$ http://typomad.com/$1 [L,R=301]
+
+php_value max_execution_time 20000
+php_value max_input_time 20000
+
+<IfModule mod_php5.c>
+php_value memory_limit 2048M
+</IfModule>
+
