@@ -1,7 +1,7 @@
 body {
     background-color: #f2f2f2;
     font-family: Lato;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     color: #555;
     -webkit-font-smoothing: antialiased;
@@ -9,13 +9,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Raleway;
-    font-weight: 300;
+    font-weight: 700;
     color: #333;
 }
 p {
     line-height: 28px;
     margin-bottom: 25px;
     font-size: 18px;
+    color: black;
 }
 .centered {
     text-align: center;
@@ -25,7 +26,13 @@ p {
 }
 .mt {
     padding-top: 25px;
+
 }
+
+.mtplus {
+    padding-top: 100px;
+}
+
 a {
     color: #16a085;
     word-wrap: break-word;
@@ -208,6 +215,76 @@ hr {
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
+
+/*Nav nueva*/
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+/*FIN Nav nueva*/
+
 #headerwrap {
     background: url(../img/header-bg1.jpg) no-repeat center top;
     margin-top: -10px;
@@ -380,7 +457,7 @@ hr {
     text-align: left;
 }
 #call {
-    background: #2f2f2f;
+    background: #f7931d;
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
@@ -423,7 +500,7 @@ hr {
     margin-bottom: 50px;
 }
 #cf {
-    background: #2f2f2f;
+    background: #f7931d;
 }
 #cf h4 {
     color: #fff;
@@ -556,6 +633,16 @@ hr {
     opacity: 1;
 }
 }
+
+.disableClick{
+    pointer-events: none;
+}
+
+/*Fondos ponentes*/
+.ponente1 {
+  background-image: assets/img/portfolio/1.jpg
+}
+
 
 
 /* draggabillies
