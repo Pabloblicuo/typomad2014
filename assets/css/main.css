@@ -33,6 +33,10 @@ p {
     padding-top: 100px;
 }
 
+.mt200 {
+    padding-top: 200px;
+}
+
 a {
     color: #16a085;
     word-wrap: break-word;
@@ -666,4 +670,43 @@ hr {
 #has-handle .handle:hover {
   cursor: move;
   background: #0AF;
+}
+
+
+/*-----*/
+
+
+#container {
+  width: 520px;
+}
+
+/* clearfix */
+#container:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.item {
+  width: 120px;
+  height: 120px;
+  float: left;
+  background: #F90;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.item:hover {
+  background: #09F;
+  cursor: move;
+}
+
+.item.is-dragging,
+.item.is-positioning-post-drag {
+  background: #09F;
+  z-index: 2;
+}
+
+#notification {
+  opacity: 0;
 }

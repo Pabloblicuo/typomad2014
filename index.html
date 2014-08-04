@@ -422,6 +422,8 @@ exposiciones y talleres de tipografía llenan la ciudad de Madrid. En esta edici
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
+
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -429,8 +431,16 @@ exposiciones y talleres de tipografía llenan la ciudad de Madrid. En esta edici
 	<script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/classie.js"></script>
 	<script src="assets/js/AnimOnScroll.js"></script>
-	<script src="assets/js/draggabilly.pkgd.min.js"></script>
-	<script type="texto/javascript"> draggie.enable();</script>
+	
+	<script src="assets/js/classie.js"></script>
+ 	<script src="assets/js/AnimOnScroll.js"></script>
+ 	<script src="assets/js/draggabilly.pkgd.min.js"></script>
+-	<script type="texto/javascript"> draggie.enable();</script>
++	<script type="text/javascript"> 
++	var elem = document.querySelector('#grid');
++	var draggie = new Draggabilly( elem, {
++
++	});</script>
 	<script>
 		new AnimOnScroll( document.getElementById( 'grid' ), {
 			minDuration : 0.4,
