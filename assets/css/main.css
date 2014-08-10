@@ -6,6 +6,20 @@ body {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+
+    -moz-font-feature-settings:"lnum" 1; 
+-moz-font-feature-settings:"lnum=1"; 
+-ms-font-feature-settings:"lnum" 1; 
+-o-font-feature-settings:"lnum" 1; 
+-webkit-font-feature-settings:"lnum" 1; 
+font-feature-settings:"lnum" 1;
+
+-moz-font-feature-settings:"liga" 1; 
+-moz-font-feature-settings:"liga=1"; 
+-ms-font-feature-settings:"liga" 1; 
+-o-font-feature-settings:"liga" 1; 
+-webkit-font-feature-settings:"liga" 1; 
+font-feature-settings:"liga" 1;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Raleway;
@@ -18,6 +32,21 @@ p {
     font-size: 18px;
     color: #000;
 }
+
+.subtitulo {
+    color: #f7931d;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -5px;
+    
+}
+
+.subtitulo a {
+    text-decoration: underline;
+}
+
 .centered {
     text-align: center;
 }
@@ -31,7 +60,7 @@ p {
 }
 
 .mt50 {
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .mtplus {
@@ -42,9 +71,21 @@ p {
     padding-top: 200px;
 }
 
+.socializa {
+    color: #000;
+    font-size: 21px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.justificado {
+    text-align: justify;
+}
+
 a {
-    color: #16a085;
+    color: #f7931d;
     word-wrap: break-word;
+
     -webkit-transition: color .1s ease-in, background .1s ease-in;
     -moz-transition: color .1s ease-in, background .1s ease-in;
     -ms-transition: color .1s ease-in, background .1s ease-in;
@@ -232,7 +273,7 @@ hr {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #f7931d;
 }
 
 .navbar-brand {
@@ -244,7 +285,7 @@ hr {
 }
 
 .navbar-custom a {
-    color: #000;
+    color: #fff;
 }
 
 .navbar-custom .nav li a {
@@ -258,13 +299,14 @@ hr {
 .navbar-custom .nav li.active {
     outline: 0;
     /*background-color: rgba(255,255,255,.2);*/
-    background-color: #f1c2c9;
+    background-color: #fff;
 }
 
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
+    background-color: #f7931d;
 }
 
 .navbar-toggle:focus,
@@ -285,7 +327,7 @@ hr {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #f7931d;
         color: #fff;
     }
     .top-nav-collapse .nav li a {
@@ -304,6 +346,11 @@ hr {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+    .navbar-custom a {
+    color: #000;
+    }
+
+
 }
 
 /*FIN Nav nueva*/
@@ -335,17 +382,20 @@ hr {
     letter-spacing: 3px;
 }
 #headerwrap h2 {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 100;
-    letter-spacing: 2px;
+    color: #000;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-feature-settings:;
 }
 #headerwrap i {
     font-size: 35px;
     color: #fff;
 }
 #headerwrap .spacer {
-    margin-top: 130px;
+    margin-top: 0px;
 }
 #mapwrap {
     margin: 0;
@@ -486,12 +536,27 @@ hr {
     padding-bottom: 35px;
     text-align: center;
 }
+
 #call h3 {
     color: #fff;
 }
 #call p {
     color: #fff;
 }
+
+#callnegro {
+    background: #000;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+#callnegro h3 {
+    color: #fff;
+}
+#callnegro p {
+    color: #fff;
+}
+
 #sf {
     display: block;
     width: 100%}
@@ -770,7 +835,7 @@ hr {
     background-image: url(../img/portfolio-sep.jpg);
 }
 
-.cursornuevo {
+.cursorgo {
     cursor: url(../img/go.svg), progress;
 }
 
