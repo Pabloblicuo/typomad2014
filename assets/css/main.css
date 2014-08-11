@@ -43,6 +43,24 @@ p {
     
 }
 
+.h4blanco {
+    font-family: Raleway;
+    font-weight: 700;
+    color: #f7931d;
+    font-size: 18px;
+}
+
+.pfooter {
+    line-height: 24px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.h6footer {
+    font-size: 14px;
+    color: #fff;
+}
+
 .subtitulo a {
     text-decoration: underline;
 }
@@ -56,7 +74,10 @@ p {
 }
 .mt {
     padding-top: 25px;
+}
 
+.mtless {
+    padding-top: 35px;
 }
 
 .mt50 {
@@ -71,11 +92,33 @@ p {
     padding-top: 200px;
 }
 
+.mbless {
+    padding-bottom: 30px;
+}
+
 .socializa {
     color: #000;
     font-size: 21px;
     padding-right: 15px;
     padding-top: 15px;
+}
+
+.socializablanco {
+    color: #fff;
+    font-size: 21px;
+    padding-right: 15px;
+
+}
+
+.pt {
+    padding-top: 15px;    
+}
+
+.strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 33px;
+    margin-left: 35px;
 }
 
 .justificado {
@@ -104,6 +147,16 @@ a:before, a:after {
     -o-transition: color .1s ease-in, background .1s ease-in;
     transition: color .1s ease-in, background .1s ease-in;
 }
+
+#enlaceblanco a {
+    color: #fff;
+    font-size: 16px;
+}
+
+#enlaceblanco a:hover {
+    color: #f7931d;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -116,20 +169,24 @@ hr {
     border-radius: 0;
 }
 .btn-green {
-    color: #fff;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 400;
 }
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
-    color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
-    font-weight: 300;
+    color: #f7931d;
+    background-color: #000;
+    border-color: #000;
+    font-weight: 400;
 }
 .tm {
     font-size: 14px;
     line-height: 20px;
+}
+
+.boton {
+    margin-top: 20px;
 }
 .menu {
     position: fixed;
@@ -548,7 +605,7 @@ hr {
     background: #000;
     padding-top: 35px;
     padding-bottom: 35px;
-    text-align: center;
+    text-align: left;
 }
 #callnegro h3 {
     color: #fff;
@@ -957,3 +1014,32 @@ hr {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+/*MAILCHIMP*/
+
+#mc_embed_signup{
+  background: none; 
+  clear:left; font:14px; 
+  Helvetica,Arial,sans-serif; 
+}
+
+.email {
+  width: 100%; border: 0px; padding-left: 15px; padding-top: 5px;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+input[type="button"] {
+  border: none;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  background-color: none;
+
+}
+user agent stylesheetinput[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: push-button;
+-webkit-user-select: none;
+white-space: pre;
+}
