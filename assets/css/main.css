@@ -50,6 +50,13 @@ p {
     font-size: 18px;
 }
 
+.h5blanco {
+    font-family: Lato;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+}
+
 .pfooter {
     line-height: 24px;
     font-size: 16px;
@@ -186,7 +193,7 @@ hr {
 }
 
 .boton {
-    margin-top: 20px;
+    margin-top: -5px;
 }
 .menu {
     position: fixed;
@@ -356,7 +363,7 @@ hr {
 .navbar-custom .nav li.active {
     outline: 0;
     /*background-color: rgba(255,255,255,.2);*/
-    background-color: #fff;
+    background-color: #000;
 }
 
 .navbar-toggle {
@@ -1025,9 +1032,14 @@ hr {
 }
 
 .email {
-  width: 100%; border: 0px; padding-left: 15px; padding-top: 5px;
-  font-size: 20px;
-  padding-bottom: 5px;
+  width: 50%;
+border: 0px;
+padding-left: 15px;
+padding-top: 9px;
+font-size: 20px;
+padding-bottom: 9px;
+margin-right: 14px;
+margin-top: 20px;
 }
 
 input[type="button"] {
@@ -1035,9 +1047,11 @@ input[type="button"] {
   align-items: flex-start;
   text-align: center;
   cursor: default;
-  background-color: none;
+  background-color: #fff;
+  height: 1px;
 
 }
+
 user agent stylesheetinput[type="button"], input[type="submit"], input[type="reset"] {
 -webkit-appearance: push-button;
 -webkit-user-select: none;
