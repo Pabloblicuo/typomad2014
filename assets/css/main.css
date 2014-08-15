@@ -187,6 +187,25 @@ hr {
     border-color: #000;
     font-weight: 400;
 }
+
+.btn-orange {
+    color: #000;
+    background-color: #f7931d;
+    border-color: #f7931d;
+    font-weight: 400;
+}
+
+.btn-orange a {
+    color: #fff;
+}
+
+.btn-orange:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
+    color: #000;
+    background-color: #000;
+    border-color: #000;
+    font-weight: 400;
+}
+
 .tm {
     font-size: 14px;
     line-height: 20px;
