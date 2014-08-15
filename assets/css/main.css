@@ -821,41 +821,69 @@ hr {
   background: #0AF;
 }
 
-/*.letra1 {
+.letra1 {
   position: relative; 
-  left: 332px; 
-  top: -659px;
+  left: 298px; top: -646px;
 }
 
 .letra2 {
   position: relative; 
-  left: 301px; 
-  top: -525px;
+  left: 311px; top: -519px;
 }
 
 .letra3 {
   position: relative; 
-  left: 301px; 
-  top: -525px;
+  left: 390px; top: -525px;
 }
 
 .letra4 {
   position: relative; 
-  left: -156px; 
-  top: -419px;
+  left: -79px; top: -411px;
 }
 
 .letra5 {
   position: relative; 
-  left: -5px; 
-  top: -372px;
+  left: 122px; top: -369px;
 }
 
 .letra6 {
   position: relative; 
-  left: -358px; 
-  top: -263px;
-}*/
+  left: -200px; top: -245px;
+}
+
+@media(max-width:1110px) {
+
+    .letra1 {
+  position: relative; 
+  left: 144px; top: -658px;
+}
+
+.letra2 {
+  position: relative; 
+  left: 166px; top: -515px;
+}
+
+.letra3 {
+  position: relative; 
+  left: 238px; top: -519px;
+}
+
+.letra4 {
+  position: relative; 
+  left: -215px; top: -401px;
+}
+
+.letra5 {
+  position: relative; 
+  left: -22px; top: -364px;
+}
+
+.letra6 {
+  position: relative; 
+  left: 259px; top: -366px;
+}
+    
+}
 
 
 /*-----*/
