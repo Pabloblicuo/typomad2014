@@ -14,12 +14,12 @@ body {
 -webkit-font-feature-settings:"lnum" 1; 
 font-feature-settings:"lnum" 1;
 
--moz-font-feature-settings:"liga" 1; 
+/*-moz-font-feature-settings:"liga" 1; 
 -moz-font-feature-settings:"liga=1"; 
 -ms-font-feature-settings:"liga" 1; 
 -o-font-feature-settings:"liga" 1; 
 -webkit-font-feature-settings:"liga" 1; 
-font-feature-settings:"liga" 1;
+font-feature-settings:"liga" 1;*/
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Raleway;
@@ -79,6 +79,11 @@ p {
 .goright {
     text-align: right;
 }
+
+.mt15 {
+    padding-top: 15px;
+}
+
 .mt {
     padding-top: 25px;
 }
@@ -382,7 +387,7 @@ hr {
 .navbar-custom .nav li.active {
     outline: 0;
     /*background-color: rgba(255,255,255,.2);*/
-    background-color: #f7931d;
+    background-color: #f7c180;
 }
 
 .navbar-toggle {
@@ -874,32 +879,32 @@ hr {
 
     .letra1 {
   position: relative; 
-  left: 144px; top: -658px;
+  left: 95px; top: -639px;
 }
 
 .letra2 {
   position: relative; 
-  left: 166px; top: -515px;
+  left: 116px; top: -511px;
 }
 
 .letra3 {
   position: relative; 
-  left: 238px; top: -519px;
+  left: 188px; top: -514px;
 }
 
 .letra4 {
   position: relative; 
-  left: -215px; top: -401px;
+  left: -277px; top: -396px;
 }
 
 .letra5 {
   position: relative; 
-  left: -22px; top: -364px;
+  left: -79px; top: -360px;
 }
 
 .letra6 {
   position: relative; 
-  left: 259px; top: -366px;
+  left: 242px; top: -366px;
 }
     
 }
