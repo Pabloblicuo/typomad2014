@@ -969,7 +969,8 @@ hr {
 }
 
 #portfoliowrap i {
-    font-size: 50px;
+    font-size: 22px;
+    padding-right: 5px;!important
 }
 
 .proc {
