@@ -169,6 +169,15 @@ a:before, a:after {
     color: #f7931d;
 }
 
+.naranja{
+    color: #f7931d;
+    line-height: 28px;
+}
+.blanco{
+    color: #fff;
+    line-height: 28px;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -677,18 +686,15 @@ hr {
     margin-bottom: 50px;
 }
 #cf {
-    background: #f7931d;
+    background: #fff;
 }
 #cf h4 {
-    color: #fff;
-    margin-left: 15px;
-    margin-top: 15px;
+    color: #000;
 }
 #cf p {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     line-height: 18px;
-    margin-left: 15px;
 }
 #cf .container {
     width: 100%}
@@ -966,6 +972,10 @@ hr {
 
 .mb {
     margin-bottom: 60px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
 }
 
 #portfoliowrap i {

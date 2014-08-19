@@ -12,7 +12,7 @@
     <meta name="author" content="Pablo Gamez">
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
-    <title>Typomad 2014</title>
+    <title>Expos Typomad 2014</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -32,61 +32,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-  <style>* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-
-
-#container {
-  width: 520px;
-}
-
-/* clearfix */
-#container:after {
-  content: ' ';
-  display: block;
-  clear: both;
-}
-
-.item {
-  width: 120px;
-  height: 120px;
-  float: left;
-  background: none;
-  margin: 0px;
-  border-radius: 10px;
-}
-
-
-
-.item:hover {
-  background: none;
-  cursor: move;
-}
-
-.item.is-dragging,
-.item.is-positioning-post-drag {
-  background: none;
-  z-index: 2;
-}
-
-#notification {
-  opacity: 0;
-}</style>
-
-  <script>
-    window.open    = function(){};
-    window.print   = function(){};
-    // Support hover state for mobile.
-    if (false) {
-      window.ontouchstart = function(){};
-    }
-  </script>
-
 
 </head>
 
@@ -117,7 +62,7 @@
                     </li>
                     
                     <li class="page-scroll">
-                        <a href="#download">Expos</a>
+                        <a href="#download" style="background-color: #f7c180;">Expos</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Entradas</a>
@@ -126,7 +71,7 @@
                         <a href="#contact">Horario</a>
                     </li> -->
                     <li class="page-scroll">
-                        <a href="#contact">Venue</a>
+                        <a href="#contact">Espacio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact" class="disableClick" style="padding-right: 0px;
@@ -145,182 +90,39 @@ padding-left: 0px;">|</a>
         <!-- /.container -->
     </nav>
 
-<!-- MAIN IMAGE SECTION -->
-  <div id="headerwrap">
-    <div class="container intro">
+    <!-- CONVOCATORIAS -->
+    <div class="container mt200">
 
-      <div class="row hidden-xs">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-          
-          
-          <img class="mtplus disableClick" src="assets/img/typomad.svg">
-          <h2 class="centered mt">Madrid<br>14 - 15 Noviembre</h2>
-          <div class="spacer"></div>
-          
+        <h1 class="centered">Convocatorias abiertas</h1>
 
-          <!-- Esto es el draggi -->
-          <div class="">
-
-          <div class="item letra1">
-          <img src="assets/img/letras/letrao1.svg"></div>
-          
-          <div class="item letra2">
-          <img src="assets/img/letras/letrac.svg"></div>
-
-          <div class="item letra3">
-          <img src="assets/img/letras/letrau.svg"></div>
-
-          <div class="item letra4">
-          <img src="assets/img/letras/letral.svg"></div>
-
-          <div class="item letra5">
-          <img src="assets/img/letras/letrat.svg"></div>
-
-          <div class="item letra6">
-          <img src="assets/img/letras/letrao2.svg"></div>
-
-          </div>
-
-          <!-- Fin del draggi -->
-          
-
-          </div>
-        
-      </div><!-- row -->
-
-          <div class="row hidden-sm hidden-md hidden-lg">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-          
-          
-          <img class="disableClick img-responsive" src="assets/img/cabecera-mini.svg">
-          <h2 class="centered mt">Madrid<br>14 - 15 Noviembre</h2>
-          <div class="spacer"></div>          
-
-          </div>
-        
-      </div><!-- row -->
-
-    </div><!-- /container -->
-  </div><!-- /headerwrap -->
-
-  <script src='http://packery.metafizzy.co/packery.pkgd.js'></script><script src='http://draggabilly.desandro.com/draggabilly.pkgd.js'></script>
-
-  <script src='/assets/common/localstorage.js'></script>
-  <script src='/assets/post/scroll/remember_scroll.js'></script>
-  <script>RememberScroll.init();</script>
-
-  <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage('resize', "*");
-    }
-  </script>
-
-  <script>
-    // http://packery.metafizzy.co/packery.pkgd.js and 
-// http://draggabilly.desandro.com/draggabilly.pkgd.js added as external resource
-
-var notifElem;
-
-window.onload = function() {
-  notifElem = document.querySelector('#notification');
-  var items = document.querySelectorAll('.item');
-  for ( var i=0, len = items.length; i < len; i++ ) {
-    var item = items[i];
-    // make element draggable with Draggabilly
-    var draggie = new Draggabilly( item );
-    draggie.on( 'dragEnd', onDragEnd );
-  }
-};
-
-function onDragEnd( draggie ) {
-  // compare movement
-  var drag = draggie.dragPoint;
-  var message;
-  if ( drag.x === 0 && drag.y === 0 ) {
-    message = 'click'
-  } else {
-    message = 'move'
-  }
-  notify( message );
-}
-
-// all the rest of this stuff is just to make the
-// notification appear and disappear
-
-// ----- text helper ----- //
-
-var docElem = document.documentElement;
-var textSetter = docElem.textContent !== undefined ? 'textContent' : 'innerText';
-
-function setText( elem, value ) {
-  elem[ textSetter ] = value;
-}
-
-// -------------------------- notify -------------------------- //
-
-var transitionProp = getStyleProperty('transition');
-
-function timeStamp() {
-  var now = new Date();
-  var min = now.getMinutes();
-  min = min < 10 ? '0' + min : min;
-  var seconds = now.getSeconds();
-  seconds = seconds < 10 ? '0' + seconds : seconds;
-  return [ now.getHours(), min, seconds ].join(':');
-}
-
-var notifyTimeout;
-var hideTime = transitionProp ? 1000 : 1500;
-
-function notify( message ) {
-  message += ' at ' + timeStamp();
-  console.log( notifElem );
-  setText( notifElem, message );
-  if ( transitionProp ) {
-    notifElem.style[ transitionProp ] = 'none';
-  }
-  notifElem.style.display = 'block';
-  notifElem.style.opacity = '1';
-
-  if ( notifyTimeout ) {
-    clearTimeout( notifyTimeout );
-  }
-
-  notifyTimeout = setTimeout( hideNotify, hideTime );
-}
-
-function hideNotify() {
-  if ( transitionProp ) {
-    notifElem.style[ transitionProp ] = 'opacity 1.0s';
-    notifElem.style.opacity = '0';
-  } else {
-    notifElem.style.display = 'none';
-  }
-}
-    //@ sourceURL=pen.js
-  </script>
-
-  <!-- WELCOME SECTION -->
-    <div class="container">
-
-    <div class="row">
-             
-        <div class="col-lg-4 col-lg-offset-2">
-          <!-- <h1>We build websites & apps that people love!</h1> -->
-          <p>Typomad es la fiesta madrileña de la tipografía. Un evento anual en el que las ponencias,exposiciones y talleres de tipografía llenan la ciudad de Madrid. En esta edición el tema central del evento será</p>
+        <div class="row mt15">     
+        <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 centered">
+          <h2 class="naranja mb30">¡Sin letras!</h2>
+          <p>En Typomad no son todo conferencias y exposiciones. También tendremos talleres y safaris por la ciudad con la tiporafía siempre protagonista. ¡Vente además a las inauguraciones y tómate algo con nosotros!</p>
+          <button class="btn btn-orange btn-lg"><i class="fa fa-cloud-download socializablanco"></i><a href="https://www.dropbox.com/s/qjeizxlrjpxfpge/Dossier%20typomad%202014.pdf" target="blank">Descarga las bases</a></button>
         </div>
-        <div class="col-lg-4 col-lg-offset-0">
-          <!-- <h1>We build websites & apps that people love!</h1> -->
-          <p>“Lo oculto en tipografía”, mostrando así figuras históricas, innovaciones y nuevas formas de entender la tipografía. En síntesis, todo aquello que es menos conocido y que a su vez es clave en el diseño tipográfico.</p>
+        <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 centered">
+          <h2 class="naranja mb30">Typo Gifs</h2>
+          <p>En Typomad no son todo conferencias y exposiciones. También tendremos talleres y safaris por la ciudad con la tiporafía siempre protagonista. ¡Vente además a las inauguraciones y tómate algo con nosotros!</p>
+          <button class="btn btn-orange btn-lg"><i class="fa fa-cloud-download socializablanco"></i><a href="https://www.dropbox.com/s/qjeizxlrjpxfpge/Dossier%20typomad%202014.pdf" target="blank">Descarga las bases</a></button>
         </div>
-        
-        <!-- Un Boton pequeño -->
-        <!-- <div class="col-lg-4">
-          <p class="pull-right"><br><button type="button" class="btn btn-green">Start Your Project Now</button></p>
-        </div> -->
         </div>
-      
+            
     </div><!-- /.container -->
+
+    <!-- CALL TO ACTION -->
+  <div id="call" class="mt">
+    <div class="container">
+      <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h4 class="blanco">Muy pronto anunciaremos el resto de exposiciones que formarán parte de de la programación de Typomad 2014.</h4>
+      </div>
+        
+      </div><!-- row -->
+
+    </div><!-- container -->
+  </div><!-- Call to action -->
 
 
 <!-- VIMEO -->
@@ -342,147 +144,87 @@ function hideNotify() {
 
 
 
-      <!-- PONENTES SECTION -->
-  <section id="portfolio" name="portfolio"></section>
-  <div id="portfoliowrap">
-    <div class="container">
-
-      <div class="row">
-        <h1>Ponentes</h1>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo" style="background-color: #fff; color: #fff;">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                      <a href=""><h2 class="centered">Soon</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-        
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                       <a href=""><h2 class="centered">Soon</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-        
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                       <a href=""><h2 class="centered">Soon</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-      </div><!-- /row -->
-
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo" style="background-color: #fff; color: #fff;">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                      <a href=""><h2 class="centered">...</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-        
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                       <a href=""><h2 class="centered">...</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-        
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
-                              <div class="photo">
-                                <a class="fancybox cursorquestion" href=""><img class="img-responsive" src="assets/img/ponentes/port07.jpg" alt=""></a>
-                              </div>
-                              <div class="overlay"></div>
-                          </div>
-                      </div>
-                       <a href=""><h2 class="centered">...</h2></a>
-                  </div>
-        </div><!-- col-lg-4 -->
-      </div><!-- /row -->
-
-  </div>
       
-  </div><!--/Ponenteswrap -->
-
-  <!-- Ponentes SEPARATOR -->
-  <div class="sep portfolio" data-stellar-background-ratio="0.5"></div>
 
 <!-- TALLERES SECTION -->
   <section id="talleres" name="talleres"></section>
   <div id="portfoliowrap">
     <div class="container">
-     <h1>Talleres</h1>
+     <!-- <h1>Talleres</h1> -->
 
-        <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 desc">
-          <div class="project-wrapper">
-                      <div class="project">
-                          <div class="photo-wrapper">
+
+<div class="row"> <!-- TDC -->
+        <div class="col-lg-5 col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 desc">
+          <div class="disableClick">
+                      <div class="">
+                          <div class="">
                               <div class="photo" style="background-color: #fff; color: #fff;">
-                                <a class="fancybox cursorgo hidden-sm" href=""><img class="img-responsive" src="assets/img/talleres/craftingtype2.jpg" alt=""></a>
+                                
 
-                                <a class="fancybox cursorgo hidden-xs hidden-md hidden-lg" href=""><img class="img-responsive" src="assets/img/talleres/craftingtype.jpg" alt=""></a>
+                                <a class="" href=""><img class="img-responsive" src="assets/img/talleres/craftingtype.jpg" alt=""></a>
                               </div>
                               <div class="overlay"></div>
                           </div>
                       </div>
                       
                   </div>
+
+                   <!-- Mapa -->
+  <div id="cf">
+    <div class="container">
+      <div class="row">
+        
+        <!-- DIRECCIÓN -->
+        <!-- <div class="col-lg-5 goright"> 
+          <h4>Galería Slowtrack:</h4>
+          <h5>(Calle Nosecuantos, 34)</h5><p>Horario:<br/>L-V 11:00 a 21:00<br/>L-V 11:00 a 21:00<br/>Domingo cerrado</p>
+          <br>
+        </div> -->
+        <!--FIN Direccion-->
+
+        <!-- Mapita -->
+        <div class="col-lg-12 col-lg-offset-0 mt15" style="padding-right: 0px; padding-left: 0px;"> 
+              <div id="mapwrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3037.8757584801524!2d-3.695998747731151!3d40.411603047664386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226287988cc51%3A0x2013ae1ea82f415a!2sPaseo+del+Prado%2C+34!5e0!3m2!1ses!2ses!4v1397418192243" width="100%" height="150" frameborder="0" style="border:0" zoom="10"></iframe>
+          </div>  
+        </div><!--FIN Mapita-->
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- FIN Mapa -->
+
+
                   
         </div><!-- col-lg-4 -->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-          <a href=""><h2 style="margin-top: 0px;">Crafting Type</h2></a>
-          <div class="subtitulo">Con <a href="http://www.octaviopardo.com/">Octavio Pardo</a> y <a href="http://understandingfonts.com/who/dave-crossland/">Dave Crossland</a></div>
-          <div><p>Taller intensivo de diseño de tipografía digital. Una oportunidad única para empezar en la tipografía o mejorar tus habilidades.<br>-<br>8 de Octubre<br>12:00-18:00</p></div>
+        <div class="col-lg-7 col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 desc">
+          <a href=""><h2 style="margin-top: 0px;">Type Directors Club 60</h2></a>
+          <div class="subtitulo">Del 12 de mayo al 13 de septiembre</div>
+          <div><p><br><a href="http://craftingtype.com/">Crafting Type</a> es un taller intensivo de 3 días donde los principiantes aprenderán cómo diseñar tipografías y los iniciados aumentarán sus habilidades. Crafting Type recorre el mundo con este taller y es la segunda vez que se realiza en España.<br>
+          La tipografía puede parecer una disciplina dificil y oscura, pero el equipo de Crafting Type planteará el taller de una forma divertida y accesible, para que acabes con confianza suficiente para enfrentarte al diseño de letras y a su uso en diseño.<br></p></div>
 
-        </div>
-        </div><!-- /row -->
+          <div class="col-lg-6 col-md-5 col-sm-6 col-xs-6">
+          <h4>Galería Slowtrack:</h4><p>(Calle Nosecuantos, 34)</p>
+          </div>
+          <div class="col-lg-6 col-md-5 col-sm-6 col-xs-6">
+          <h4>Horario:</h4><p>L-V 10:00 a 20:00</p>
+          </div>
+          
+
         
-        <h3 class="centered">Más talleres muy pronto</h3>
+        </div>
+        </div> <!-- Fin ROW TDC -->
+
+
+        
+        
+
       
-  </div> <!-- container -->
-      
-  </div><!--/Portfoliowrap -->
+  </div> <!-- container -->      
+  </div><!--/FIN TALLERES -->
   
   
   <!-- CALL TO ACTION -->
-  <div id="call">
+  <div class="mt" id="call">
     <div class="container">
       <div class="row">
         <h3>No te pierdas las novedades</h3>
