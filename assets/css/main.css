@@ -1112,6 +1112,17 @@ hr {
     margin-top: 25px;
 }
 
+@media(max-width:1100px) {
+    
+    .photolimpia {
+        background-color: #fff; color: #fff;
+    }
+
+    .photo-wrapper {
+      background-color: #fff; 
+    }
+
+    }
 
 /*VIMEO responsive*/
 
