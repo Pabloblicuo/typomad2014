@@ -43,6 +43,36 @@ p {
     
 }
 
+.conferencia {
+    color: #000;
+    font-size: 26px;
+    font-family: Lato;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    line-height: 32px;
+    
+}
+
+.ponente {
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.anchoponente {
+    max-width: 1200px;
+}
+
+@media(min-width:1500px) {
+    .anchoponente {
+    margin-left: 7%;
+    }
+}
+    
+
+
 .h4blanco {
     font-family: Raleway;
     font-weight: 700;
