@@ -1,0 +1,1 @@
+var staticness = "http://typomad-static";

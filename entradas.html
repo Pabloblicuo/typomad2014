@@ -207,7 +207,7 @@ padding-left: 0px;">|</a>
                         <a href="http://typomad.com/2013/">2013</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index-english.html">English</a>
+                        <a href="http://typomad.com/entradas-english.html">English</a>
                     </li>
                 </ul>
             </div>
@@ -216,160 +216,52 @@ padding-left: 0px;">|</a>
         <!-- /.container -->
     </nav>
 
-<!-- MAIN IMAGE SECTION -->
-  <div id="headerwrap">
-    <div class="container intro">
+<div id="entradas">
+ <div class="container">
 
-      <div class="row hidden-xs">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-          
-          
-          <img class="mtplus disableClick" src="assets/img/soon.svg">
-          <h2 class="centered mt">¡Muy pronto!</br>15 de Septiembre</h2>
-          <div class="spacer"></div>
-          
+<div class="row mb100">
 
-          <!-- Esto es el draggi -->
-          <div class="">
+  <div id="fotoposter" class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+    <img class="img-responsive  mt200" src="assets/img/tickets/bunkercartel.jpg" alt="">
+  </div>
 
-          <div class="item letrao1">
-          <img src="assets/img/letras/letrao1.svg"></div>
-          
-          <div class="item letrao2">
-          <img src="assets/img/letras/letrac.svg"></div>
+  <div id="textoposter" class="col-lg-5 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1 mt200">
+  <h3 style="margin-left: 15px; margin-top: 0px;">18 ponencias, 2 días de festival:</h3>
+  <div id="entradas">
+      <div id="izquierda" class="col-lg-9 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-9 col-sm-offset-0 col-xs-10 col-xs-offset-0">
 
-          <div class="item letrao3">
-          <img src="assets/img/letras/letrau.svg"></div>
-
-          <div class="item letrao4">
-          <img src="assets/img/letras/letral.svg"></div>
-
-          <div class="item letrao5">
-          <img src="assets/img/letras/letrat.svg"></div>
-
-          <div class="item letrao6">
-          <img src="assets/img/letras/letrao2.svg"></div>
-
-          </div>
-
-          <!-- Fin del draggi -->
-          
-
-          </div>
+      <div>
+      <h2>Early bird tickets</h2>
+      <h2>General tickets</h2>
+      </div>
         
-      </div><!-- row -->
+      </div>
 
-          <div class="row hidden-sm hidden-md hidden-lg">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-          
-          
-          <img class="disableClick img-responsive" style="margin-left: 0%;" src="assets/img/cabecera-mini-entradas.svg">
-          <h2 class="centered mt">Madrid<br>14 - 15 Noviembre</h2>
-          <div class="spacer"></div>          
+      <div id="derecha" class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 
-          </div>
-        
-      </div><!-- row -->
+      <div>
+      <h2>30€</h2>
+      <h2>35€</h2>
+      </div>
+    
+      </div>
 
-    </div><!-- /container -->
-  </div><!-- /headerwrap -->
+  </div>
 
-  <script src='http://packery.metafizzy.co/packery.pkgd.js'></script><script src='http://draggabilly.desandro.com/draggabilly.pkgd.js'></script>
+   <div class="" style="margin-top: 100px;"> 
+      <button class="btn btn-orange btn-lg" style="margin-top: 40px; margin-left: 15px; margin-bottom: 40px;"><i class="fa fa-ticket socializablanco"></i><a href="http://services.codeeta.com/widget/v3/56496" target="blank">Comprar entradas</a></button>
 
-  <script src='/assets/common/localstorage.js'></script>
-  <script src='/assets/post/scroll/remember_scroll.js'></script>
-  <script>RememberScroll.init();</script>
+      <a href="http://services.codeeta.com/widget/v3/56496" target="blank"><i class="fa fa-arrow-right pringadosfirefox"></i></a> 
 
-  <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage('resize', "*");
-    }
-  </script>
+      </div>
 
-  <script>
-    // http://packery.metafizzy.co/packery.pkgd.js and 
-// http://draggabilly.desandro.com/draggabilly.pkgd.js added as external resource
 
-var notifElem;
+  <p>Entre las 50 primeras entradas sortearemos 5 pósters diseñados e impresos por <a href="http://www.bunkertype.com/">Bunkertype</a>! </br></br>El taller artesanal barcelonés ha creado esta edición especial experimentando con las distintas formas de ocultar los caracteres a través de la impresión tipográfica tradicional (fuera de formato, superpuestas, tintas barniz sin pigmentos cromáticos, uso de la presión...) Un lujo de colaboración que te puedes colgar en la pared.</br></br>Impreso en tres pasadas sobre ArcoPrint Avorio de 130gr de Fedrigoni. Las medidas son 40x50. </p>
+  </div>
+  
+</div>
 
-window.onload = function() {
-  notifElem = document.querySelector('#notification');
-  var items = document.querySelectorAll('.item');
-  for ( var i=0, len = items.length; i < len; i++ ) {
-    var item = items[i];
-    // make element draggable with Draggabilly
-    var draggie = new Draggabilly( item );
-    draggie.on( 'dragEnd', onDragEnd );
-  }
-};
-
-function onDragEnd( draggie ) {
-  // compare movement
-  var drag = draggie.dragPoint;
-  var message;
-  if ( drag.x === 0 && drag.y === 0 ) {
-    message = 'click'
-  } else {
-    message = 'move'
-  }
-  notify( message );
-}
-
-// all the rest of this stuff is just to make the
-// notification appear and disappear
-
-// ----- text helper ----- //
-
-var docElem = document.documentElement;
-var textSetter = docElem.textContent !== undefined ? 'textContent' : 'innerText';
-
-function setText( elem, value ) {
-  elem[ textSetter ] = value;
-}
-
-// -------------------------- notify -------------------------- //
-
-var transitionProp = getStyleProperty('transition');
-
-function timeStamp() {
-  var now = new Date();
-  var min = now.getMinutes();
-  min = min < 10 ? '0' + min : min;
-  var seconds = now.getSeconds();
-  seconds = seconds < 10 ? '0' + seconds : seconds;
-  return [ now.getHours(), min, seconds ].join(':');
-}
-
-var notifyTimeout;
-var hideTime = transitionProp ? 1000 : 1500;
-
-function notify( message ) {
-  message += ' at ' + timeStamp();
-  console.log( notifElem );
-  setText( notifElem, message );
-  if ( transitionProp ) {
-    notifElem.style[ transitionProp ] = 'none';
-  }
-  notifElem.style.display = 'block';
-  notifElem.style.opacity = '1';
-
-  if ( notifyTimeout ) {
-    clearTimeout( notifyTimeout );
-  }
-
-  notifyTimeout = setTimeout( hideNotify, hideTime );
-}
-
-function hideNotify() {
-  if ( transitionProp ) {
-    notifElem.style[ transitionProp ] = 'opacity 1.0s';
-    notifElem.style.opacity = '0';
-  } else {
-    notifElem.style.display = 'none';
-  }
-}
-    //@ sourceURL=pen.js
-  </script>
+</div>
 
 
     <!-- CALL TO ACTION -->
@@ -474,7 +366,7 @@ function hideNotify() {
         </div>
 
         <div class="col-lg-2 col-md-3 col-md-offset-0 col-sm-3 col-sm-3 col-xs-3 col-xs-offset-1">
-          <a href="http://www.muvim.es/"><img class="img-responsive" src="assets/img/sponsors/muvim.gif" alt=""></a>
+          <a href="http://www.muvim.es/"><img class="img-responsive" src="assets/img/sponsors/wolkowicz.gif" alt=""></a>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-3 col-sm-3 col-xs-3">
@@ -503,7 +395,7 @@ function hideNotify() {
 
 
         <div class="col-lg-4 col-md-4 col-md-offset-0 col-sm-4 col-xs-4 col-xs-offset-1">
-          <a href="http://www.muvim.es/"><img class="img-responsive" src="assets/img/sponsors/no.gif" alt=""></a>
+          <a href="http://www.muvim.es/"><img class="img-responsive" src="assets/img/sponsors/muvim.gif" alt=""></a>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-3 col-sm-3 col-xs-3">
@@ -525,6 +417,9 @@ function hideNotify() {
       <p>¡Descarga nuestro dossier de patrocinio y conoce todas las ventajas y opciones de colaboración!</p>
 
       <button class="btn btn-orange btn-lg"><a href="https://www.dropbox.com/s/qjeizxlrjpxfpge/Dossier%20typomad%202014.pdf?dl=0" target="blank"><i class="fa fa-cloud-download socializablanco"></i>Dossier de patrocinio</a></button>
+
+      <a href="https://www.dropbox.com/s/qjeizxlrjpxfpge/Dossier%20typomad%202014.pdf?dl=0" target="blank"><i class="fa fa-arrow-right pringadosfirefox"></i></a> 
+
       </div><!-- FIN Descarga Dossier -->
 
     </div><!-- container -->

@@ -43,6 +43,10 @@ p {
     
 }
 
+.tachado {
+    text-decoration:line-through;
+}
+
 .conferencia {
     color: #000;
     font-size: 26px;
@@ -71,7 +75,9 @@ p {
     }
 }
     
-
+.pringadosfirefox {
+    font-size: 20px;
+    }
 
 .h4blanco {
     font-family: Raleway;
@@ -150,6 +156,10 @@ p {
 
 .mt200 {
     padding-top: 200px;
+}
+
+.mb100 {
+    padding-bottom: 100px;
 }
 
 .mbless {
